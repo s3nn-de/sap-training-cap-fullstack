@@ -17,7 +17,7 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "/service/risk_managementSvcs/",
+        "uri": "service/risk_managementSvcs/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -151,5 +151,9 @@
   "sap.fiori": {
     "registrationIds": [],
     "archeType": "transactional"
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "lcap.risk_management"
   }
 }
