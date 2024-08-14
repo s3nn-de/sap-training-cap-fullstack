@@ -8,7 +8,7 @@ sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
 
     return new ListReport(
         {
-            appId: 'riskmanagement.riskManagement',
+            appId: 'riskmanagement.RiskManagement',
             componentId: 'RisksList',
             contextPath: '/Risks'
         },

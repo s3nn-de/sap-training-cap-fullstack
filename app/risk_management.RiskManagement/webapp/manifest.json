@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "riskmanagement.riskManagement",
+    "id": "riskmanagement.RiskManagement",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,11 +13,11 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.14.3",
-      "toolsId": "caec0666-93fc-4e0d-a63b-74a33372caf5"
+      "toolsId": "5804ecc6-3cf4-494e-8211-db74eb2de7fa"
     },
     "dataSources": {
       "mainService": {
-        "uri": "service/risk_managementSvcs/",
+        "uri": "/service/risk_managementSvcs/",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -27,8 +27,8 @@
     },
     "crossNavigation": {
       "inbounds": {
-        "riskmanagementriskManagement-display": {
-          "semanticObject": "riskmanagementriskManagement",
+        "riskmanagementRiskManagement-display": {
+          "semanticObject": "riskmanagementRiskManagement",
           "action": "display",
           "title": "{{flpTitle}}",
           "signature": {
@@ -74,7 +74,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "riskmanagement.riskManagement.i18n.i18n"
+          "bundleName": "riskmanagement.RiskManagement.i18n.i18n"
         }
       },
       "": {
@@ -151,9 +151,5 @@
   "sap.fiori": {
     "registrationIds": [],
     "archeType": "transactional"
-  },
-  "sap.cloud": {
-    "public": true,
-    "service": "lcap.risk_management"
   }
 }

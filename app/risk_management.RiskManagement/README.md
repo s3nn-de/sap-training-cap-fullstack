@@ -1,14 +1,14 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Wed Aug 14 2024 09:48:23 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>Wed Aug 14 2024 12:41:11 GMT+0000 (Coordinated Universal Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
 |**App Generator Version**<br>1.14.3|
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local Cap|
 |**Service URL**<br>http://localhost:4004/service/risk_managementSvcs/|
-|**Module Name**<br>risk_management.riskManagement|
+|**Module Name**<br>risk_management.RiskManagement|
 |**Application Title**<br>Risk Management|
 |**Namespace**<br>|
 |**UI5 Theme**<br>sap_horizon|
@@ -18,15 +18,15 @@
 |**Add Eslint configuration**<br>False|
 |**Main Entity**<br>Risks|
 
-## risk_management.riskManagement
+## risk_management.RiskManagement
 
-Risk Management
+Risk Management App
 
 ### Starting the generated app
 
 -   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  In order to launch the generated app, simply start your CAP project and navigate to the following location in your browser:
 
-http://localhost:4004/risk_management.riskManagement/webapp/index.html
+http://localhost:4004/risk_management.RiskManagement/webapp/index.html
 
 #### Pre-requisites:
 

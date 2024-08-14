@@ -33,16 +33,6 @@ annotate service.Risks with @(
                 Label : 'supplier_BusinessPartner',
                 Value : supplier_BusinessPartner,
             },
-            {
-                $Type : 'UI.DataField',
-                Value : supplier.BusinessPartnerFullName,
-                Label : 'BusinessPartnerFullName',
-            },
-            {
-                $Type : 'UI.DataField',
-                Value : supplier.BusinessPartnerIsBlocked,
-                Label : 'BusinessPartnerIsBlocked',
-            },
         ],
     },
     UI.Facets : [
@@ -78,11 +68,6 @@ annotate service.Risks with @(
             $Type : 'UI.DataField',
             Label : 'criticality',
             Value : criticality,
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : supplier_BusinessPartner,
-            Label : 'supplier_BusinessPartner',
         },
     ],
 );
