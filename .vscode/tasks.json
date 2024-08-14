@@ -17,17 +17,6 @@
       }
     },
     {
-      "type": "dpt.ptdeploy",
-      "label": "Deploy risk_management",
-      "taskType": "Deploy"
-    },
-    {
-      "type": "dpt.ptdeploy",
-      "label": "Enable Discovery and Deploy risk_management",
-      "taskType": "Deploy",
-      "enableDiscovery": "true"
-    },
-    {
       "label": "npm-install",
       "type": "process",
       "command": "npm",
@@ -71,6 +60,27 @@
       "options": {
         "cwd": "${workspaceFolder}/"
       }
+    },
+    {
+      "type": "build.mta",
+      "label": "Build Risk Management",
+      "taskType": "Build",
+      "projectPath": "/home/user/projects/risk_management",
+      "extensions": []
+    },
+    {
+      "type": "deploy.mta.cf",
+      "label": "Deploy Risk Management",
+      "taskType": "Deploy",
+      "mtarPath": "/home/user/projects/risk_management/mta_archives/*.mtar",
+      "cfTarget": "cf-dev",
+      "cfEndpoint": "https://api.cf.us10-001.hana.ondemand.com",
+      "cfOrg": "67ddb638trial",
+      "cfSpace": "dev",
+      "extensions": [],
+      "dependsOn": [
+        "Build MTA: risk_management - PT"
+      ]
     }
   ]
 }

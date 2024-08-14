@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "riskmanagement.Risks",
+    "id": "riskmanagement.riskManagement",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.14.3",
-      "toolsId": "e5278bff-cea7-4aae-a6cc-e4e33a5f1f6d"
+      "toolsId": "caec0666-93fc-4e0d-a63b-74a33372caf5"
     },
     "dataSources": {
       "mainService": {
@@ -27,8 +27,8 @@
     },
     "crossNavigation": {
       "inbounds": {
-        "riskmanagementRisks-display": {
-          "semanticObject": "riskmanagementRisks",
+        "riskmanagementriskManagement-display": {
+          "semanticObject": "riskmanagementriskManagement",
           "action": "display",
           "title": "{{flpTitle}}",
           "signature": {
@@ -74,7 +74,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "riskmanagement.Risks.i18n.i18n"
+          "bundleName": "riskmanagement.riskManagement.i18n.i18n"
         }
       },
       "": {

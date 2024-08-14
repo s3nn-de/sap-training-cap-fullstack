@@ -1,2 +1,3 @@
 
-using from './risk_management.Risks/annotations';
+
+using from './risk_management.riskManagement/annotations';

@@ -1,7 +1,7 @@
 {
-  "name": "risk_management.risks",
+  "name": "risk_management.riskmanagement",
   "version": "0.0.1",
-  "description": "Risks Management App",
+  "description": "Risk Management",
   "keywords": [
     "ui5",
     "openui5",

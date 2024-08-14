@@ -26,9 +26,9 @@ build-parameters:
       commands:
         - npm install
 modules:
-  - name: risk_management-riskmanagement.Risks
+  - name: risk_management-riskmanagement.riskManagement
     type: html5
-    path: app/risk_management.Risks
+    path: app/risk_management.riskManagement
     build-parameters:
       builder: custom
       commands:
@@ -37,8 +37,10 @@ modules:
           npx -p @ui5/cli@^3.0.0 ui5 build --dest dist
           --include-task=generateCachebusterInfo
         - mkdir dist-zip
-        - bash -c "cd dist && npx bestzip ../dist-zip/riskmanagementRisks.zip *"
-      _artifactName: riskmanagementRisks.zip
+        - >-
+          bash -c "cd dist && npx bestzip
+          ../dist-zip/riskmanagementriskManagement.zip *"
+      _artifactName: riskmanagementriskManagement.zip
       supported-platforms: []
       build-result: dist-zip
   - name: risk_management-db-deployer
@@ -146,9 +148,9 @@ modules:
     build-parameters:
       build-result: resources
       requires:
-        - name: risk_management-riskmanagement.Risks
+        - name: risk_management-riskmanagement.riskManagement
           artifacts:
-            - riskmanagementRisks.zip
+            - riskmanagementriskManagement.zip
           target-path: resources
         - name: risk_management-launchpad
           artifacts:

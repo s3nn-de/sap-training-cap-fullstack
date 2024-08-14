@@ -29,7 +29,8 @@
     "start-local": "npm run generate-entry-point && npm run cds-watch",
     "generate-entry-point": "dev-cap-tools gen-entrypoint",
     "cds-watch": "cds watch --open",
-    "watch-risk_management.Risks": "cds watch --open risk_management.Risks/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-risk_management.Risks": "cds watch --open risk_management.Risks/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-risk_management.riskManagement": "cds watch --open risk_management.riskManagement/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
@@ -65,6 +66,7 @@
   },
   "lcap": true,
   "sapux": [
-    "app/risk_management.Risks"
+    "app/risk_management.Risks",
+    "app/risk_management.riskManagement"
   ]
 }
